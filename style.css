@@ -28,7 +28,7 @@ ul li{
   background: rgba(95, 105, 121, 1);
 } 
 .faq_section .container{
-  flex-basis: 70%;
+  flex-basis: 60%;
   padding: 50px 20px;
 }
 .faq_section .container .title{
