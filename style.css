@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  list-style: decimal;
+  margin-left: 20px;
+  font-style: normal;
+}
+ul li{
+  padding: 6px 0;
+}
+.faq_section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+ ::selection{
+  background: rgba(95, 105, 121, 1);
+} 
+.faq_section .container{
+  flex-basis: 70%;
+  padding: 50px 20px;
+}
+.faq_section .container .title{
+  color: rgba(95, 105, 121, 1);
+    font-weight: 400;
+    font-family: Goldenbook;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 1.65;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.container .parent-tab{
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+.container .parent-tab label{
+  background: #c7b9da27;
+  padding:20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.container .parent-tab label:hover{
+  background: #c7b9da27;
+}
+.parent-tab input:checked ~ label{
+  border-radius: 5px 5px 0 0;
+  background: #c7b9da27;
+}
+.container label span{
+  color: #444e5a  ;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 600;
+  /* text-shadow: 0 -1px 1px #0056b3; */
+}
+
+.parent-tab label .icon{
+  position: relative;
+  height: 24px;
+  width: 24px;
+  font-size: 14px;
+  color: #00000081;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  
+}
+
+.parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent-tab input:checked ~ label .icon i:before{
+  content: '\f068';
+}
+.container .parent-tab .content{
+  max-height: 0px;
+  overflow: hidden;
+  background: #c7b9da50;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.4s ease;
+}
+.parent-tab input:checked ~ .content{
+  max-height: 100%;
+  padding: 1rem 0;
+}
+
+.parent-tab .content p{
+  padding: 20px;
+  font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+
+
+/* max-width:768px */
+@media (max-width:768px) {
+  .faq_section .container {
+    flex-basis: 80%;
+    padding: 50px 0px;
+}
+}
+/* max-width:768px */
+
+/* max:550px */
+@media (max-width:550px) {
+  .faq_section .container {
+    flex-basis: 90%;
+    padding: 50px 0px;
+}
+.faq_section .container .title {
+  font-size: 18px;
+  font-weight: 500;
+
+}
+.container .parent-tab label {
+  padding: 10px 20px;
+}
+.container label span {
+  font-size: 14px;
+}
+.parent-tab input:checked ~ .content {
+  padding:0;
+}
+.parent-tab .content p {
+  font-size: 14px;
+}
+
+}
+/* max:550px */
+
+
